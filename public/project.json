@@ -1,0 +1,159 @@
+[
+    {
+        "id": 26324721411563267387,
+        "name": "Pet Adoption",
+        "time": "(November 2023)",
+        "status": false,
+        "shortDescription": "ReactJS with Pet Adoption",
+        "description": [
+            "Imgbb for storing images, authentication, and real-time database, Mongodb store",
+            "tanstack react table using for my pet listing ",
+            "All data input and update form using formik",
+            "Payment system using Stripe "
+        ],
+        "image": "https://i.ibb.co/0VNk5wj/all-devices-black-1.png",
+        "tools": [
+            "Firebase Authentication",
+            "MongoDB",
+            "Firebase",
+            "Daisy UI",
+            "TailwindCSS"
+        ],
+        "githubFrontEnd": "https://github.com/amiadud/b8a12-client-side-csesopnil",
+        "githubBackEnd": "https://github.com/amiadud/b8a12-server-side-csesopnil",
+        "live": "https://my-pet-adoption.vercel.app/"
+    },
+    {
+        "id": 26324726585463267387,
+        "name": "Library Books",
+        "time": "(October 2023)",
+        "status": false,
+        "shortDescription": "ReactJS with Library Books",
+        "description": [
+            "I have created a filter button. Only available books (quantity > 0) will be shown.",
+            "Each separate category will show books. For example, if you click on Fantasy, you can see Fantasy books.",
+            "Click on read button to read that book. Also available for download if you wish to download."
+        ],
+        "image": "https://i.ibb.co/6bKw8t0/library-screenshot.png",
+        "tools": [
+            "Firebase Authentication",
+            "MongoDB",
+            "Firebase",
+            "Daisy UI",
+            "TailwindCSS",
+            "TwElements"
+        ],
+        "githubFrontEnd": "https://github.com/sopnilali/books-library-client",
+        "githubBackEnd": "https://github.com/sopnilali/books-library-server",
+        "live": "https://books-library-client-gamma.vercel.app/"
+    },
+    {
+        "id": 2632472654740323267387,
+        "name": "MobileMaya BrandShop",
+        "time": "(October 2023)",
+        "status": false,
+        "shortDescription": "ReactJS with MobileMaya BrandShop",
+        "description": [
+            "You must login to view product details. ",
+            "Different products are added to the cart, the user based carts will be displayed. ",
+            "If you click on your favorite brand, you will see the products of that brand separately. "
+        ],
+        "image": "https://i.ibb.co/vxQL4qs/mobile-brand.png",
+        "tools": [
+            "Firebase Authentication",
+            "MongoDB",
+            "Firebase",
+            "Daisy UI",
+            "TailwindCSS",
+            "TwElements"
+        ],
+        "githubFrontEnd": "https://github.com/sopnilali/b8a10-brandshop-client-side",
+        "githubBackEnd": "https://github.com/sopnilali/b8a10-brandshop-server-side",
+        "live": "https://mobilebajar.vercel.app/"
+    },
+    {
+        "id": 2632478584740323267387,
+        "name": "Task Management",
+        "time": "(December 2023)",
+        "status": false,
+        "shortDescription": "ReactJS with Task Management",
+        "description": [
+            "You must login to your task showing. ",
+            "To-Do list with drag and drop system.",
+            "You can add new tasks, delete tasks, and edit tasks. ",
+            "When user is logged in then redirect to Dashboard Page"
+        ],
+        "image": "https://i.ibb.co/swY9CRz/all-devices-white.png",
+        "tools": [
+            "Firebase Authentication",
+            "MongoDB",
+            "Firebase",
+            "Daisy UI",
+            "TailwindCSS",
+            "TwElements"
+        ],
+        "githubFrontEnd": "https://github.com/amiadud/task-management-client",
+        "githubBackEnd": "https://github.com/amiadud/task-management-server",
+        "live": "https://task-management-one-sepia.vercel.app/"
+    },
+    {
+        "id": 2632478456458924043267325,
+        "name": "Event Management",
+        "time": "(December 2023)",
+        "status": false,
+        "shortDescription": "ReactJS with Event Management",
+        "description": [
+            "To view the details of each service, it will directly take you to the login option. ",
+            "A new slider has been added",
+            "You cannot login without your mail verification"
+        ],
+        "image": "https://i.ibb.co.com/zRGPc20/image.png",
+        "tools": [
+            "Firebase Authentication",
+            "LocalJSON",
+            "Firebase",
+            "TailwindCSS",
+            "Swiper"
+        ],
+        "githubFrontEnd": "https://github.com/sopnilali/b8a9-event-management",
+        "live": "https://event-management-silk.vercel.app/"
+    },
+    {
+        "id": 26324789562952990259267392,
+        "name": "Path to Adoption",
+        "time": "(October 2024)",
+        "status": true,
+        "shortDescription": "ReactJS with Path to Adoption 2.0",
+        "description": [
+            "Specific pet category base show pets ",
+            " implement sort by price base",
+            "Select pet base sort by price"
+        ],
+        "image": "https://i.ibb.co.com/x6dZfG8/image.png",
+        "tools": [
+            "LocalJSON"
+        ],
+        "githubFrontEnd": "https://github.com/sopnilali/petadaption-B10",
+        "live": "https://sopnilali.github.io/petadaption-B10/"
+    },
+    {
+        "id": 26324564534813443402592673763,
+        "name": "Ultimate Dream 11 Cricket Team",
+        "time": "(October 2024)",
+        "status": true,
+        "shortDescription": "ReactJS with Path to Adoption 2.0",
+        "description": [
+            "Clicking 'Choose Player' checks if the user has enough coins; if not, show an alert; otherwise, add the player. ",
+            " Place two buttons ('Available' and 'Selected') at the top-right corner of the section, with 'Selected' showing the count of chosen players (starting at 0)."
+        ],
+        "image": "https://i.imghippo.com/files/tt2199E.png",
+        "tools": [
+            "TailwindCSS",
+            "ReactJS",
+            "Fake JSON",
+            "DaisyUI"
+        ],
+        "githubFrontEnd": "https://github.com/sopnilali/Dream-11-Cricket-Team",
+        "live": "https://dream-11-cricket-team.vercel.app/"
+    }
+]
