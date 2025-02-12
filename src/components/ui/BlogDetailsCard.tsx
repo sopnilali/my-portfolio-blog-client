@@ -1,8 +1,8 @@
-import { Blog } from "@/types";
+import { TBlog } from "@/types";
 import { Metadata } from "next";
 
 
-const BlogDetailsCard = ({ blog }: { blog: Blog }) => {
+const BlogDetailsCard = ({ blog }: { blog: TBlog }) => {
 
 
 

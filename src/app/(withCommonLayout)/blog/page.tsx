@@ -1,4 +1,5 @@
 import BlogCard from '@/components/ui/BlogCard';
+import { TBlog } from '@/types';
 import { ServerModuler } from '@/utils';
 import React from 'react'
 
@@ -25,8 +26,8 @@ const BlogsPage = async() => {
         </i>
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-        {blogs.data.map((blog : any) => (
-          <BlogCard blog={blog}/>
+        {blogs.data.map((blog : TBlog, index : string) => (
+          <BlogCard blog={blog} key={index}/>
         ))}
       </div>
 

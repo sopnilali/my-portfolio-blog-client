@@ -1,14 +1,13 @@
 // components/StatsCard.js
 
-type TstatsCard = {
+interface StatsCardProps {
     title: string;
-    value: string;
-    icon: any;
+    value: string | number;
+    icon: React.ReactNode;
     color: string;
-}
+  }
 
-
-export default function StatsCard({ title, value, icon, color } : TstatsCard) {
+export default function StatsCard({ title, value, icon, color } : StatsCardProps) {
     const colorClasses : any= {
       blue: { bg: "bg-blue-100", text: "text-blue-600" },
       green: { bg: "bg-green-100", text: "text-green-600" },
