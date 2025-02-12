@@ -14,9 +14,9 @@ export const metadata : Metadata = {
 
 }
 
-const ProjectDetailsPage = async({params}: { params: { id: string } }) => {
+const ProjectDetailsPage = async({params} : any) => {
 
-    const {id} = params
+    const {id} : {id: string}  = params
 
     const project = await ServerModuler.ProjectDetails(id)
     metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
