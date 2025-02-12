@@ -14,17 +14,17 @@ export const metadata : Metadata = {
 
 }
 
-const ProjectDetailsPage = async({params}: { params: { id: string } }) => {
+const ProjectDetailsPage = async() => {
 
-    const {id} = params
+    // const {id} = params
 
-    const project = await ServerModuler.ProjectDetails(id)
-    metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
-    metadata.description = project?.data?.projectdescription
+    // const project = await ServerModuler.ProjectDetails(id)
+    // metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
+    // metadata.description = project?.data?.projectdescription
 
   return (
     <div>
-      <div className="container mx-auto p-4">
+{/*       <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">{project?.data?.projectitle}</h1>
       <Image src={project?.data?.projectimage} height={300} width={700} alt={project?.data?.projecttitle} className="w-full h-64 object-contain mb-4" />
       <p className="text-gray-700 mb-4">{project?.data?.projectdescription}</p>
@@ -47,7 +47,7 @@ const ProjectDetailsPage = async({params}: { params: { id: string } }) => {
         <Link href={project?.data?.githubbackend} className="text-white py-2 rounded text-center  hover:bg-blue-500 px-2 mr-4 bg-blue-600">Backend GitHub</Link>
         <Link href={project?.data?.liveurl} className="text-white py-2 rounded text-center hover:bg-yellow-500 px-2 mr-4 bg-yellow-600">Live URL</Link>
         </div>
-      </div>
+      </div> */}
     </div>
 
 
