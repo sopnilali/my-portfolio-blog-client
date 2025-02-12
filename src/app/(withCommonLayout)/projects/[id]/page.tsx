@@ -14,7 +14,7 @@ export const metadata : Metadata = {
 
 }
 
-const ProjectDetailsPage = async({params}: {params: {id: string}}) => {
+const ProjectDetailsPage = async({params}: any) => {
 
     const {id} = await params
 
