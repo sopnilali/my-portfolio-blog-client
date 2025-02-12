@@ -16,7 +16,6 @@ type FormValues = {
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {

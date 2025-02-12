@@ -1,6 +1,5 @@
 
 import { ServerModuler } from '@/utils'
-import { Link2 } from 'lucide-react'
 import { Metadata } from 'next'
 import { Params } from 'next/dist/server/request/params'
 import Image from 'next/image'
@@ -15,9 +14,9 @@ export const metadata : Metadata = {
 
 }
 
-const ProjectDetailsPage = async({params}: {params: Params}) => {
+const ProjectDetailsPage = async({params}: { params: { id: string } }) => {
 
-    const {id} : any = params
+    const {id} = params
 
     const project = await ServerModuler.ProjectDetails(id)
     metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
