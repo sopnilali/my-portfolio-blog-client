@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 }
 
 
-const BlogDetailsPage = async({params} : any ) => {
-    const {id} = params
-    const blog = await ServerModuler.SingleBlogs(id)
-    metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
-    metadata.description = blog?.data?.blogDescription
+const BlogDetailsPage = async( ) => {
+    // const {id} = params
+    // const blog = await ServerModuler.SingleBlogs(id)
+    // metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
+    // metadata.description = blog?.data?.blogDescription
 
 
   return (
     <div className='mb-5'>
-        <BlogDetailsCard blog={blog.data}/>
+{/*         <BlogDetailsCard blog={blog.data}/> */}
     </div>
   )
 }
