@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   robots: "index, follow"
 }
 
-const BlogDetailsPage = async({params} : {params: {blogId: string}}) => {
+const BlogDetailsPage = async({params} : { params: { blogId: string; }; }) => {
     const {blogId} = params
     const blog = await ServerModuler.SingleBlogs(blogId)
     metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
