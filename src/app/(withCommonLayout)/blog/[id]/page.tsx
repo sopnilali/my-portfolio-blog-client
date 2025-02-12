@@ -10,8 +10,13 @@ export const metadata: Metadata = {
   robots: "index, follow"
 }
 
+export interface MyPageProps {
+  params: {
+    id: string;
+  };
+}
 
-const BlogDetailsPage = async({params}: {params: {id: string}} ) : Promise<any> => {
+const BlogDetailsPage : React.FC<MyPageProps> = async({ params, ...otherProps } ) : Promise<any> => {
     const {id} = await params
     const blog = await ServerModuler.SingleBlogs(id)
     metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
