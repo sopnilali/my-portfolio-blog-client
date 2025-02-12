@@ -11,14 +11,7 @@ export const metadata: Metadata = {
 }
 
 
-interface BlogPageProps {
-  params: {
-    blogId: string;
-  };
-}
-
-
-const BlogDetailsPage : FC<BlogPageProps> = async({params}) => {
+const BlogDetailsPage = async({params} : { params: { blogId: string } } ) => {
     const {blogId} = params
     const blog = await ServerModuler.SingleBlogs(blogId)
     metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
