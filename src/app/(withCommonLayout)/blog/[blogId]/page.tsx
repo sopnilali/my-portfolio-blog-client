@@ -1,7 +1,7 @@
 import BlogDetailsCard from '@/components/ui/BlogDetailsCard'
 import { ServerModuler } from '@/utils'
 import { Metadata } from 'next'
-import React from 'react'
+import React, { FC } from 'react'
 
 export const metadata: Metadata = {
   title: 'Blog Details | Md Abdul Adud',
@@ -10,7 +10,15 @@ export const metadata: Metadata = {
   robots: "index, follow"
 }
 
-const BlogDetailsPage = async({params} : { params: { blogId: string; }; }) => {
+
+interface BlogPageProps {
+  params: {
+    blogId: string;
+  };
+}
+
+
+const BlogDetailsPage : FC<BlogPageProps> = async({params}) => {
     const {blogId} = params
     const blog = await ServerModuler.SingleBlogs(blogId)
     metadata.title = blog?.data?.blogtitle +'| Md Abdul Adud'
