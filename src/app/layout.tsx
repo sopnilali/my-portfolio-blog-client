@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Providers from "@/lib/Providers";
 
 const roboto = Roboto({
   weight: "300",
@@ -21,13 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Providers>
       <html suppressContentEditableWarning lang="en">
       <body className={roboto.className}>
         <div className="min-h-screen">{children}</div>
         {/* <Footer/> */}
       </body>
     </html>
-    </Providers>
   );
 }
