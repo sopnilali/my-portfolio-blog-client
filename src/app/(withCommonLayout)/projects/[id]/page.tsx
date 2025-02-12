@@ -14,13 +14,13 @@ export const metadata : Metadata = {
 
 }
 
-const ProjectDetailsPage = async() => {
+const ProjectDetailsPage = async({params}: {params: {id: string}}) => {
 
-    // const {id} = params
+    const {id} = await params
 
-    // const project = await ServerModuler.ProjectDetails(id)
-    // metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
-    // metadata.description = project?.data?.projectdescription
+    const project = await ServerModuler.ProjectDetails(id)
+    metadata.title = project?.data?.projecttitle +' | Md Abdul Adud'
+    metadata.description = project?.data?.projectdescription
 
   return (
     <div>
