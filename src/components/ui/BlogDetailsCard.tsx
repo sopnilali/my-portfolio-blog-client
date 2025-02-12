@@ -1,6 +1,5 @@
 import { TBlog } from "@/types";
-import { Metadata } from "next";
-
+import Image from "next/image";
 
 const BlogDetailsCard = ({ blog }: { blog: TBlog }) => {
 
@@ -16,9 +15,12 @@ const BlogDetailsCard = ({ blog }: { blog: TBlog }) => {
         </h1>
 
         {/* Blog Image */}
-        <img
-          src={blog.blogImage}
-          alt="Blog Image"
+        <Image
+          src={blog?.blogImage}
+          width={720}
+          height={360}
+          alt={blog?.blogtitle}
+          title={blog?.blogtitle}
           className="w-full h-96 object-cover rounded-lg mb-6"
         />
 

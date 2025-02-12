@@ -7,8 +7,17 @@ interface StatsCardProps {
     color: string;
   }
 
+type ColorClass = {
+  bg: string;
+  text: string;
+};
+
+type ColorClassMap = {
+  [key: string]: ColorClass;
+};
+
 export default function StatsCard({ title, value, icon, color } : StatsCardProps) {
-    const colorClasses : any= {
+    const colorClasses : ColorClassMap= {
       blue: { bg: "bg-blue-100", text: "text-blue-600" },
       green: { bg: "bg-green-100", text: "text-green-600" },
       // Add more colors as needed
