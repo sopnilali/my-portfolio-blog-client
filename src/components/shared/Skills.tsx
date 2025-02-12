@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaReact, FaTypo3 } from 'react-icons/fa';
+import { FaCss3Alt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa';
 import SectionTitle from './SectionTitle/SectionTitle';
 import { SiNodedotjs, SiRedux, SiTypescript } from 'react-icons/si';
 
